@@ -1,0 +1,37 @@
+<div id="loader-wrapper" *ngIf = "loader">
+   <div id="loader"></div>
+   <div class="loader-section section-left"></div>
+   <div class="loader-section section-right"></div>
+</div>
+<div class="about-page"></div>
+<app-header></app-header>
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-md-12">
+         <!-- Site content -->
+         <div class="tm-content">
+            <!-- Section 0 Introduction -->
+            <section class="tm-section tm-section-1">
+               <div class="tm-textbox tm-textbox-2 tm-bg-dark">
+                  <h2 class="tm-text-blue mb-4">About Me</h2>
+                  <p class="mb-4">
+                     You are allowed to modify and use this HTML template for
+                     your personal or business websites.
+                  </p>
+                  <p class="mb-4">
+                     You are NOT allowed to re-distribute this template file on
+                     your site for any reason. Thank you.
+                  </p>
+                  <a
+                     [routerLink]="['/work']"
+                     id="tm_work_link"
+                     data-linkid="2"
+                     class="tm-link m-0"
+                     >Next</a
+                     >
+               </div>
+            </section>
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="tm-main-container">
+  <div class="tm-top-container">
+    <!-- Menu -->
+    <nav id="tmNav" class="tm-nav">
+      <a class="tm-navbar-menu" href="#" (click) = menuDisplay($event)>Menu</a>
+      <ul class="tm-nav-links" style="display: none;">
+        <li class="tm-nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a [routerLink]="['/']" data-linkid="0" data-align="right" class="tm-nav-link">Home</a>
+        </li>
+        <li class="tm-nav-item" routerLinkActive="active">
+          <a [routerLink]="['/about']" data-linkid="1" data-align="right" class="tm-nav-link">About</a>
+        </li>
+        <li class="tm-nav-item" routerLinkActive="active">
+          <a
+                [routerLink]="['/work']"
+                data-linkid="2"
+                data-align="middle"
+                class="tm-nav-link">Work</a>
+        </li>
+        <li class="tm-nav-item" routerLinkActive="active">
+          <a [routerLink]="['/contact-us']" data-linkid="3" data-align="left" class="tm-nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Site header -->
+    <header class="tm-site-header-box tm-bg-dark">
+      <h1 class="tm-site-title">The Card</h1>
+      <p class="mb-0 tm-site-subtitle">Free HTML Template for you</p>
+    </header>
+  </div>
